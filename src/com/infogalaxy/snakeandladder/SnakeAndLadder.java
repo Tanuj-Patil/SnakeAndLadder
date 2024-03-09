@@ -13,9 +13,10 @@ public class SnakeAndLadder {
 	private static final int STAY = 0;
 	private static final int LADDER = 1;
 	private static final int SNAKE = 2;
+	private static final int WINNING_NO = 100;
 	
 	public void show() {
-		while (playerPosition != 100) {
+		while (playerPosition != WINNING_NO) {
 			System.out.println("Position of a player is: " +playerPosition);
 			dieNo = random.nextInt(6) + 1;
 			option = random.nextInt(3);
@@ -25,7 +26,7 @@ public class SnakeAndLadder {
 					playerPosition = playerPosition;
 					break;
 				case LADDER:
-					if(playerPosition + dieNo > 100) {
+					if(playerPosition + dieNo > WINNING_NO) {
 						continue;
 					}
 					playerPosition = playerPosition + dieNo;
