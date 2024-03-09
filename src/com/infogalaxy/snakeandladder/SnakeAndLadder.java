@@ -25,9 +25,6 @@ public class SnakeAndLadder {
 					playerPosition = playerPosition;
 					break;
 				case LADDER:
-					if(playerPosition + dieNo > 100) {
-						continue;
-					}
 					playerPosition = playerPosition + dieNo;
 					break;
 				case SNAKE:
