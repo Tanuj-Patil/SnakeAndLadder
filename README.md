@@ -1,7 +1,3 @@
-Below is the README file for the Snake & Ladder Simulator project based on the provided code and additional project description:
-
----
-
 ## Snake & Ladder Simulator
 
 This project implements a Snake and Ladder Game simulation in Java. Players start from position 0 and roll a die to move across the board. The objective is to reach the winning spot, typically at position 100. Along the way, players encounter safe spots, ladders that help them advance, and snakes that set them back.
